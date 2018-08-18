@@ -18,8 +18,13 @@ describe Idea do
     expect(idea.description).to eql(mydescription)
   end
   
+  # TDD
+  it "has an author" do
+    idea = Idea.new author: "me"
+    expect(idea.author).to eql("me")
+  end
+  
   #pending test
-  it "has an author"
   xit "has a date"
   pending it "has a rating"
 end
